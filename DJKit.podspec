@@ -7,5 +7,6 @@ Pod::Spec.new do |s|
   s.author       = { 'ziteng' => 'ziteng@dianjia.io' }
   s.source       = { :git => "https://github.com/imchenglibin/DJKit.git", :tag => s.version.to_s }
   s.source_files = 'DJKit/**/*.{h,m}'
+  s.resources = 'DJKit/**/*.png'
   s.requires_arc = true
 end
