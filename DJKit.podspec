@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { 'ziteng' => 'ziteng@dianjia.io' }
   s.source       = { :git => "https://github.com/imchenglibin/DJKit.git", :tag => s.version.to_s }
-  s.source_files = 'DJKit/{Extensions,Defines,Util,UIKit/**/*.{h,m}'
+  s.source_files = 'DJKit/Extensions/**/*.{h,m}, DJKit/Defines/**/*.{h,m}, DJKit/Util/**/*.{h,m}, DJKit/UIKit/**/*.{h,m}'
   s.resources = 'DJKit/**/*.png'
   s.requires_arc = true
 end
