@@ -118,11 +118,9 @@ typedef void (^AFFailure)(NSURLSessionDataTask * _Nullable task, NSError * _Nonn
     };
     NSURLSessionDataTask *sessionDataTask;
     if (DJRequestMethodGet == method) {
-        sessionDataTask = [manager GET:url parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
-        } success:afSuccess failure:afFailure];
+        sessionDataTask = [manager GET:url parameters:parameters success:afSuccess failure:afFailure];
     } else if (DJRequestMethodPost == method) {
-        sessionDataTask = [manager POST:url parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
-        } success:afSuccess failure:afFailure];
+        sessionDataTask = [manager POST:url parameters:parameters success:afSuccess failure:afFailure];
     }
 }
 
